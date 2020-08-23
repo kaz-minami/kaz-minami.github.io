@@ -94,22 +94,22 @@ blockquote {
   background: #FFF;
 }
 
-ul { 
+ul {
   margin: 2px 0 22px 17px;
 }
 
-ul li { 
+ul li {
   list-style-type: disc;
   margin: 0 0 6px 0; 
   padding: 0 0 4px 5px;
   line-height: 1.5em;
 }
 
-ol { 
+ol {
   margin: 8px 0 22px 20px;
 }
 
-ol li { 
+ol li {
   margin: 0 0 11px 0;
 }
 
@@ -255,7 +255,7 @@ nav {
   padding: 15px 0;
 }
 
-.content { 
+.content {
   text-align: left;
   width: 670px;
   margin: 25px 0 0 0;
@@ -263,14 +263,25 @@ nav {
   font-size: 120%;
 }
   
-.content ul { 
+/*
+箇条書きの画像を非表示
+.content ul {
   margin: 2px 0 22px 0px;
 }
 
-.content ul li, .sidebar ul li { 
+.content ul li{
   list-style-type: disc;
-  margin: 0 0 0 0; 
-  padding: 0 0 4px 5px;
+  background: url(../images/bullet.png) no-repeat;
+  margin: 0 0 0 0;
+  padding: 0 0 4px 28px;
+  line-height: 1.5em;
+}
+*/
+
+.sidebar ul li { 
+  list-style-type: disc;
+  margin: 0 0 0 0;
+  padding: 0 0 4px 2px;
   line-height: 1.5em;
 }
 
