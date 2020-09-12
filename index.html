@@ -8,9 +8,12 @@
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
   <link rel="stylesheet" type="text/css" href="css/style.css" />
   <!-- modernizr enables HTML5 elements and feature detects -->
-  <!--
   <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
-  -->
+  <script>
+    $(function(){
+      $("#footer").load("footer.html");
+    });
+  </script>
   <script>
   MathJax = {
     chtml: {
@@ -22,12 +25,6 @@
   };
   </script>
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
-  <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
-  <script>
-    $(function(){
-      $("#footer").load("footer.html");
-    });
-  </script>
 </head>
 
 <body>
