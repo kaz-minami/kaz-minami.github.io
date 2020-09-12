@@ -25,12 +25,22 @@
   <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
   <script>
     $(function(){
-      $("#header").load("header.html");
-    })
+      $("#footer").load("footer.html");
+    });
   </script>
 </head>
 
 <body>
+<!-- javascript at the bottom for fast page loading -->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.easing-sooper.js"></script>
+<script type="text/javascript" src="js/jquery.sooperfish.js"></script>
+<script type="text/javascript" src="js/image_fade.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('ul.sf-menu').sooperfish();
+  });
+</script>
   <div id="main">
     <header>
       <div id="logo">
@@ -92,20 +102,13 @@
 	</p>
       </div>
     </div>
-    <footer>
+    <!--
+    <footer id="fotter">
       <p>Copyright &copy; CSS3_seascape | <a href="http://www.css3templates.co.uk">design from css3templates.co.uk</a></p>
     </footer>
+    -->
+  <div id="footer"></div>
   </div>
   <p>&nbsp;</p>
-  <!-- javascript at the bottom for fast page loading -->
-  <script type="text/javascript" src="js/jquery.js"></script>
-  <script type="text/javascript" src="js/jquery.easing-sooper.js"></script>
-  <script type="text/javascript" src="js/jquery.sooperfish.js"></script>
-  <script type="text/javascript" src="js/image_fade.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $('ul.sf-menu').sooperfish();
-    });
-  </script>
 </body>
 </html>
