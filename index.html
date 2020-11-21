@@ -10,7 +10,7 @@
   <!-- modernizr enables HTML5 elements and feature detects -->
   <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
   <script>
-    $(function(){
+    $(function (){
       $("#footer").load("footer.html");
     });
   </script>
@@ -25,6 +25,11 @@
   };
   </script>
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      $(".load_footer").load("footer.html");
+    });
+  </script>  
 </head>
 
 <body>
@@ -39,6 +44,7 @@
   });
 </script>
   <div id="main">
+
     <header>
       <div id="logo">
         <div id="logo_text">
@@ -67,6 +73,7 @@
         </ul>
       </nav>
     </header>
+
     <div id="site_content">
       <div class="gallery">
         <ul class="images">
@@ -99,11 +106,11 @@
 	</p>
       </div>
     </div>
-    <!--
-    <footer id="footer">
-      <p>Copyright &copy; CSS3_seascape | <a href="http://www.css3templates.co.uk">design from css3templates.co.uk</a></p>
+
+    <footer class="load_footer">
+<!--      <p>Copyright &copy; CSS3_seascape | <a href="http://www.css3templates.co.uk">design from css3templates.co.uk</a></p> -->
     </footer>
-    -->
+
   <div id="footer"></div>
   </div>
   <p>&nbsp;</p>
