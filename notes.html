@@ -9,50 +9,20 @@
   <link rel="stylesheet" type="text/css" href="css/style.css" />
   <!-- modernizr enables HTML5 elements and feature detects -->
   <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+  <script>
+  MathJax = {
+    chtml: {
+      matchFontHeight: false
+    },
+    tex: {
+      inlineMath: [['$', '$']]
+    }
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
 </head>
 
 <body>
-  <div id="main">
-    <header>
-      <div id="logo">
-        <div id="logo_text">
-          <!-- class="logo_colour", allows you to change the colour of the text -->
-          <h1><a href="index.html">Kaz Minami's Web Site</span></a></h1>
-        </div>
-      </div>
-      <nav>
-        <ul class="sf-menu" id="nav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="book_review.html">Book Review</a></li>
-          <li><a href="museum.html">Museum</a></li>
-          <li class="selected"><a href="notes.html">Notes</a></li>
-          <li><a href="#">Photos</a>
-            <ul>
-              <li><a href="#">Drop Down One</a>
-                <ul>
-                  <li><a href="#">Sub Drop Down One</a></li>
-                  <li><a href="#">Sub Drop Down Two</a></li>
-                  <li><a href="#">Sub Drop Down Three</a></li>
-                  <li><a href="#">Sub Drop Down Four</a></li>
-                  <li><a href="#">Sub Drop Down Five</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <div id="site_content">
-      <div class="content">
-        <h1>Notes</h1>
-        <p>とりとめのないnoteたちです．</p>
-      </div>
-    </div>
-    <footer>
-      <p>Copyright &copy; CSS3_seascape | <a href="http://www.css3templates.co.uk">design from css3templates.co.uk</a></p>
-    </footer>
-  </div>
-  <p>&nbsp;</p>
   <!-- javascript at the bottom for fast page loading -->
   <script type="text/javascript" src="js/jquery.js"></script>
   <script type="text/javascript" src="js/jquery.easing-sooper.js"></script>
@@ -63,5 +33,26 @@
       $('ul.sf-menu').sooperfish();
     });
   </script>
+  <script type="text/javascript">
+  $(document).ready(function() {
+    $("header").load("header.html");
+    $("footer").load("footer.html");
+  });
+  </script>  
+  <div id="main">
+
+    <header class="load_header"></header>
+
+    <div id="site_content">
+      <div class="content">
+        <h1>Notes</h1>
+        <p>とりとめのないnoteたちです．</p>
+      </div>
+    </div>
+
+    <footer class="load_footer"></footer>
+
+  </div>
+  <p>&nbsp;</p>
 </body>
 </html>
